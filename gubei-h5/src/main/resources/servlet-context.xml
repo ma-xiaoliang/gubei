@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+	<!-- DispatcherServlet Context: defines this servlet's request-processing 
+		infrastructure -->
+
+	<!-- En1ables the Spring MVC @Controller programming model -->
+	<mvc:annotation-driven>
+	<!-- 
+		<mvc:message-converters register-defaults="true">
+			<bean
+				class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+				<property name="supportedMediaTypes">
+					<list>
+						<value>application/json</value>
+                   		<value>text/json</value>
+					</list>
+				</property>
+			</bean>
+		</mvc:message-converters>
+		 -->
+	</mvc:annotation-driven>
+
+
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving 
+		up static resources in the ${webappRoot}/resources directory -->
+	<mvc:resources mapping="/mobile/js/**" location="/js/" />
+	<mvc:resources mapping="/mobile/css/**" location="/css/" />
+	<mvc:resources mapping="/mobile/img/**" location="/img/" />
+	<mvc:resources mapping="/staticFile/**" location="/staticFile"/>
+
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources 
+		in the /WEB-INF/views directory -->
+		
+	<bean class="org.springframework.web.servlet.view.BeanNameViewResolver">
+	<property name="order" value="0"/>
+	</bean>
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="order" value="1"/>
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+
+	
+	
+	<!-- <bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
+		<property name="encoding">
+			<value type="org.codehaus.jackson.JsonEncoding">UTF8</value>
+		</property>
+		<property name="extractValueFromSingleKeyModel" value="true" />
+		<property name="objectMapper">
+			<bean class="org.codehaus.jackson.map.ObjectMapper">
+				<property name="serializationInclusion"> 
+					<value type="org.codehaus.jackson.map.annotate.JsonSerialize$Inclusion">NON_NULL</value>
+				</property>
+			</bean>
+		</property>
+		<property name="contentType" value="application/json;charset=UTF-8" />
+	</bean> -->
+	
+	<!-- Default ExceptionHandler  默认异常解析器 -->
+<!-- 	<bean id="defaultExceptionHandler" class="com.bruce.geekway.exception.GeekwayExceptionResolver">
+		<property name="defaultErrorView" value="error" />
+		<property name="defaultStatusCode" value="500" />
+	</bean> -->
+
+	<context:component-scan base-package="com.bruce.geekway.*" />
+
+<!-- 	<mvc:interceptors>
+		<bean class="com.bruce.geekway.interceptor.AuthorizeInterceptor"/>
+	</mvc:interceptors> -->
+	
+</beans>

@@ -1,0 +1,1237 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, b, s, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/*统一组合框的默认样式*/
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input, button {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+a{
+    text-decoration: none;
+}
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    /*width: 1263px;*/
+    width: 100%;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+/*头部部分stare*/
+.header {
+    width: 1200px;
+    height: 94px;
+    margin: 0 auto;
+    border-bottom: 2px solid #F2F2F2;
+}
+
+.header .logo {
+    float: left;
+    margin-top: 8px;
+   margin-right: 30px; 
+}
+
+.header .music {
+    background-color: #31C27C;
+}
+
+.header li {
+    float: left;
+}
+
+.header li a {
+    display: block;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 5px;
+    font: 16px "microsoft yahei";
+    line-height: 94px;
+    color: #333333;
+}
+
+.header .music a {
+    color: #ffffff;
+}
+
+.header .btn2 {
+    width: 86px;
+    height: 37px;
+    border: 2px solid #E4E4E4;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    font: 12px "microsoft yahei";
+    float: right;
+    margin-top: 25px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.header .btn1 {
+    width: 114px;
+    height: 39px;
+    background-color: #31C27C;
+    margin-top: 25px;
+    border: 2px solid #31C27C;
+    color: #FFFFFF;
+    font: 12px "microsoft yahei";
+    border-radius: 5px;
+    float: right;
+    margin-right: 9px;
+    cursor: pointer;
+}
+
+.header span {
+    display: block;
+    width: 79px;
+    height: 39px;
+    float: right;
+    color: #333333;
+    font: 16px "microsoft yahei";
+    line-height: 39px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.header span a {
+    color: #333333;
+}
+
+.header span a:hover {
+    color: #31C27C;
+}
+
+.header .search {
+    width: 233px;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 25px;
+    border: 2px solid #E4E4E4;
+    border-radius: 5px;
+    float: right;
+    padding-left: 15px;
+    position: relative;
+}
+
+.header .search input {
+    color: #919191;
+}
+
+.header .search span {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.header .scr{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/scr.jpg") no-repeat;
+    position: absolute;
+    top: -14px;
+    right: 0;
+    cursor: pointer;
+}
+/*头部部分end*/
+/*头部下方部分stare*/
+.musicb {
+    height: 100px;
+    line-height: 51px;
+}
+
+.musicb-t {
+    text-align: center;
+}
+
+.musicb-t span {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.musicb-t span a {
+    color: #333333;
+}
+
+.musicb-t span a:hover {
+    color: #31C27C;
+}
+
+.musicb .musicall a {
+    color: #31C27C;
+}
+
+/*头部下方部分end*/
+/*新歌首发部分stare*/
+.newmusic {
+    height: 717px;
+    background: url("../images/bg_index_new.jpg");
+    position: relative;
+}
+
+.newmusic .newmusic-top {
+    height: 221px;
+    text-align: center;
+}
+
+.newmusic .newmusic-top h1 {
+    font: 30px "microsoft yahei";
+    padding-top: 81px;
+    color: #fff;
+    width: 490px;
+    height: 45px;
+    margin: 0 auto;
+}
+.newmusic .newmusic-top h1 span{
+    display: block;
+    width: 72px;
+    height: 1px;
+    background-color: #464646;
+    text-align: center;
+    float: left;
+    margin-top: 22px;
+}
+.newmusic .newmusic-top h1 s{
+    display: block;
+    width: 72px;
+    height: 1px;
+    background-color: #464646;
+    text-align: center;
+    float: right;
+    margin-top: 22px;
+
+}
+.newmusic .newmusic-top .musicelect {
+    margin-top: 48px;
+    color: #9A9A9A;
+}
+.newmusic .newmusic-top .musicelect span {
+    margin: 0 35px;
+    cursor: pointer;
+}
+.newmusic .newmusic-top .musicelect span:hover{
+    color: #ffffff;
+}
+.newmusic .newmusic-top .musicelect .all a {
+    color: #fff;
+    margin-right: 31px;
+}
+
+#music {
+    color: #fff;
+}
+
+.musiclb {
+    width: 1200px;
+    height: 398px;
+    /*margin-left: 32px;*/
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.musiclb li {
+    float: left;
+    height: 400px;
+    background-color: #000;
+}
+.musiclb .hidden{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+.musiclb li:hover {
+    background-color: #31C27C;
+}
+
+.musiclb li img {
+    margin-bottom: 26px;
+    cursor: pointer;
+}
+
+.musiclb ul {
+    width: 4800px;
+    text-align: center;
+    position: absolute;
+}
+
+.musiclb li p {
+    width: 220px;
+    height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin: 10px auto;
+    margin-top: 20px;
+}
+
+.musiclb li b {
+    color: #999;
+}
+
+.musiclb1 > li {
+    width: 1200px;
+}
+
+.musiclb1 > li > ul {
+    width: 1200px;
+}
+
+.musiclb1 > li > ul > li {
+    position: relative;
+}
+
+.musiclb1 s {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: url("../images/cover_play.png") no-repeat;
+    left: 50%;
+    top: 50%;
+    margin-left: -35px;
+    margin-top: -85px;
+    cursor: pointer;
+    display: none;
+}
+
+.newmusic .arrl {
+    width: 50px;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #373737;
+    color: #fff;
+}
+
+.arr {
+    display: none;
+    font: 40px "microsoft yahei";
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.newmusic .arrr {
+    width: 50px;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: #373737;
+    color: #fff;
+}
+
+.newmusic ol {
+    width: 120px;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: 35px;
+}
+
+.newmusic ol li {
+    width: 30px;
+    height: 1px;
+    background-color: #575757;
+    float: left;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.newmusic .ol1 {
+    background-color: #FFFFFF;
+}
+
+/*新歌首发部分end*/
+/*精彩推荐stare*/
+.recommend{
+    height: 593px;
+}
+.recommend .box{
+    width: 100%;
+    height: 580px;
+}
+
+.recommend h1{
+    font: 30px "microsoft yahei";
+    padding-top: 60px;
+    color: #000;
+    width: 490px;
+    height: 45px;
+    margin: 0 auto;
+}
+.recommend h1 span{
+    display: block;
+    width: 72px;
+    height: 1px;
+    background-color: #C4C4C4;
+    text-align: center;
+    float: left;
+    margin-top: 22px;
+}
+.recommend h1 s{
+    display: block;
+    width: 72px;
+    height: 1px;
+    background-color: #C4C4C4;
+    text-align: center;
+    float: right;
+    margin-top: 22px;
+
+}
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.slide {
+    height: 410px;
+    position: relative;
+}
+
+.slide li {
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+
+.slide li img {
+    width: 100%;
+}
+
+.arrow {
+    opacity: 0;
+    position: absolute;
+    top: 39%;
+    z-index: 1000;
+    width: 100%;
+}
+
+.prev, .next {
+    width: 76px;
+    height: 112px;
+    position: absolute;
+    z-index: 99;
+}
+
+.prev {
+    width: 93px;
+    height: 57px;
+    position: absolute;
+    left: -34px;
+    top: 50%;
+    margin-top: -20px;
+    background: #000;
+    cursor: pointer;
+    line-height: 57px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid #fff;
+}
+
+.next {
+    width: 93px;
+    height: 57px;
+    position: absolute;
+    right: -33px;
+    top: 50%;
+    margin-top: -20px;
+    background: #000;
+    cursor: pointer;
+    line-height: 57px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid #fff;
+}
+.two{
+    width: 250px;
+    height: 20px;
+    line-height: 20px;
+    right: 10px;
+    bottom: 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -20px;
+}
+.two span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 16px;
+    cursor: pointer;
+}
+.two span {
+    width: 30px;
+    height: 1px;
+    background-color: #B8B8B8;
+}
+.two .current{
+    background-color: #151515;
+}
+
+/*精彩推荐end*/
+/*排行榜部分stare*/
+.musicTop {
+    height: 813px;
+    /*text-align: center;*/
+    background: url("../images/bg_index_top2.jpg") top no-repeat;
+}
+
+.musicTop h3 {
+    font: 30px "microsoft yahei";
+    padding-top: 81px;
+    color: #fff;
+    width: 490px;
+    height: 45px;
+    margin: 0 auto;
+    text-align: center;
+}
+.musicTop h3 span{
+    display: block;
+    width: 72px;
+    height: 1px;
+    background-color: #464646;
+    text-align: center;
+    float: left;
+    margin-top: 22px;
+}
+.musicTop h3 s{
+    display: block;
+    width: 72px;
+    height: 1px;
+    background-color: #464646;
+    text-align: center;
+    float: right;
+    margin-top: 22px;
+
+}
+.musicTop ul {
+    width: 1200px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 53px;
+    overflow: hidden;
+}
+
+.musicTop ul li {
+    float: left;
+    width: 300px;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+}
+.musicTop .topbg {
+    width: 300px;
+    height: 550px;
+}
+.musicTop .topbg s{
+    display: block;
+    width: 300px;
+    height: 550px;
+    position: relative;
+}
+.musicTop .topbg h3{
+    color: #ffffff;
+    position: absolute;
+    width: 200px;
+    height: 110px;
+    top:0;
+    left: 50px;
+    text-align: center;
+}
+.musicTop .topbg h3 a{
+    color: #ffffff;
+}
+.musicTop .topbg i{
+    font: 20px "microsoft yahei";
+    opacity: 0.8;
+}
+.musicTop .topbg e{
+    font: 30px "microsoft yahei";
+}
+.musicTop ul li .musicName{
+    width: 190px;
+    height: 222px;
+    position:absolute;
+    bottom: 70px;
+    left: 60px;
+}
+.musicTop ul li .musicName a{
+    color: #ffffff;
+    font: 16px "microsoft yahei";
+    float: left;
+}
+.musicTop ul li .musicName li{
+    width: 180px;
+    height: 46px;
+    color: #ffffff;
+    float: left;
+    margin-bottom: 10px;
+}
+.musicTop ul li .musicName1{
+    width: 10px;
+    height: 46px;
+    margin-left: 10px;
+}
+.musicTop ul li .musicName2{
+    width: 160px;
+    height: 20px;
+    /*margin-left: 20px;*/
+}
+.musicTop ul li .musicName3 a{
+    /*margin-left: 10px;*/
+    font: 13px "microsoft yahei";
+    opacity: 0.6;
+}
+/*排行榜部分end*/
+/*热门歌单部分stare*/
+.box{
+    overflow: hidden;
+}
+.box .one{
+    text-align: center;
+}
+.box .one h3{
+    font: 30px "microsoft yahei";
+    padding-top: 81px;
+    color: #000;
+    width: 490px;
+    height: 45px;
+    margin: 0 auto;
+    text-align: center;
+}
+.box .one h3 span{
+    display: block;
+    width: 72px;
+    height: 1px;
+    background-color: #C4C4C4;
+    text-align: center;
+    float: left;
+    margin-top: 22px;
+}
+.box .one h3 s{
+    display: block;
+    width: 72px;
+    height: 1px;
+    background-color: #C4C4C4;
+    text-align: center;
+    float: right;
+    margin-top: 22px;
+
+}
+.box .tow{
+    width: 1263px;
+    height: 460px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.tow1{
+    width: 1200px;
+    height: 463px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.to{
+    width: 300px;
+    height: 463px;
+    float: left;
+}
+
+.to img{
+    width:100%;
+    height:100%;
+}
+
+.wu1{
+    width: 300px;
+    height: 300px;
+    float: left;
+    position: relative;
+    margin-right: 10px;
+    overflow: hidden;
+
+}
+.bf{
+    width: 70px;
+    height: 70px;
+    background: url("../images/cover_play.png") ;
+    position: absolute;
+    top:110px;
+    left: 110px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.wu2{
+    width: 300px;
+    height: 300px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+
+}
+.wu3{
+    width: 300px;
+    height: 300px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.wu4{
+    width: 300px;
+    height: 300px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.box .three1{
+    width: 300px;
+    height: 163px;
+    background-color: #333333 ;/*!important;*/
+    float: left;
+    overflow: hidden;
+}
+.box .three1:hover{
+    background-color: #31C27C !important;
+}
+.box .three2:hover{
+    background-color: #31C27C !important;
+}
+.box .three3:hover{
+    background-color: #31C27C !important;
+}
+.box .three4:hover{
+    background-color: #31C27C !important;
+}
+.box .three2{
+    width: 300px;
+    height: 163px;
+    background-color: #414141;
+    float: left;
+}
+
+.box .three3{
+    width: 300px;
+    height: 163px;
+    background-color: #333333;
+    float: left;
+}
+.box .three4{
+    width: 300px;
+    height: 163px;
+    background-color:#414141;
+    float: left;
+}
+
+.four1{
+    width: 300px;
+    height: 29px;
+    text-align: center;
+    color: #fff;
+    margin-top: 57px;
+    font: 14px "microsoft yahei";
+    line-height: 29px;
+}
+.four2{
+    width: 300px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #999;
+
+}
+.qq{
+    position: relative;
+}
+.qq0{
+    width: 810px;
+    height: 252px;
+    position: absolute;
+    top: 350px;
+    left: 260px;
+    opacity: 0;
+
+}
+.qq1{
+    width: 810px;
+    color: #FFFFFF;
+}
+.qq2{
+    width: 422px;
+    text-align: center;
+    margin-left: 194px;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+.qq3{
+    width: 230px;
+    height: 60px;
+    background-color: #31C27C;
+    margin-left: 285px;
+    color: #FFFFFF;
+    line-height: 60px;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/*热门歌单部分end*/
+/*MV首播stare*/
+.mv {
+    height: 843px;
+    background-color: #E6E6E6;
+}
+
+.mv h3 {
+    font: 30px "microsoft yahei";
+    padding-top: 81px;
+    color: #000;
+    width: 490px;
+    height: 45px;
+    margin: 0 auto;
+    text-align: center;
+}
+.mv h3 span{
+    display: block;
+    width: 72px;
+    height: 1px;
+    background-color: #C4C4C4;
+    text-align: center;
+    float: left;
+    margin-top: 22px;
+}
+.mv h3 s{
+    display: block;
+    width: 72px;
+    height: 1px;
+    background-color: #C4C4C4;
+    text-align: center;
+    float: right;
+    margin-top: 22px;
+
+}
+
+.mv-t {
+    margin-top: 54px;
+    text-align: center;
+}
+
+.mv-t span {
+    margin: 0 28px;
+    cursor: pointer;
+}
+
+.mt-all a {
+    color: #000;
+}
+.mv-t a:hover{
+    color: #31C27C;
+}
+.mt-play {
+    /*width: 1200px;*/
+    width: 100%;
+    height: 574px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.mt-play ul{
+    width: 1200px;
+    height: 286px;
+    margin: 0 auto;
+}
+.mt-play li {
+    float: left;
+    text-align: center;
+    font-family: "microsoft yahei";
+    margin-bottom: 37px;
+    /*position: relative;*/
+}
+
+.mt-play img {
+    width: 300px;
+    height: 153px;
+}
+
+.mt-play span {
+    display: block;
+    width: 300px;
+    height: 153px;
+    overflow: hidden;
+}
+
+.mt-play p {
+    color: #464646;
+    margin-top: 39px;
+    cursor: pointer;
+    width: 262px;
+    height: 20px;
+    overflow: hidden;
+    margin:0 auto;
+    margin-top: 15px;
+}
+.mt-play p:hover{
+    color: #31C27C;
+}
+.mt-play s {
+    display: block;
+    color: #999999;
+    cursor: pointer;
+    width: 122px;
+    height: 16px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.mt-play s:hover{
+    color: #31C27C;
+}
+.mt-play b {
+    display: block;
+    /*width: 58px;*/
+    height: 18px;
+    line-height: 18px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #999999;
+    font-weight: normal;
+    cursor: pointer;
+}
+.mt-play i {
+    display: inline-block;
+    width: 19px;
+    height: 12px;
+    background-position: -180px -20px;
+    margin-right: 5px;
+    vertical-align: -1px;
+    background: url("../images/mv.jpg") no-repeat;
+}
+/*MV首播end*/
+/*尾部部分stare*/
+.footer {
+    height: 471px;
+    background-color: #333333;
+}
+
+.footer-t {
+    width: 1200px;
+    height: 339px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.download, .product, .links {
+    width: 357px;
+    height: 229px;
+}
+
+.product {
+    margin-left: 70px;
+}
+
+.footer .product li, .footer .download li {
+    text-align: center;
+}
+
+.footer .download a {
+    font: 15px "microsoft yahei";
+    display: block;
+    width: 80px;
+    height: 76px;
+    margin: 0 4px;
+}
+
+.footer .product ul a {
+    font: 15px "microsoft yahei";
+    display: block;
+    width: 100px;
+    height: 76px;
+    margin: 0 4px;
+}
+
+.footer li span {
+    display: block;
+    padding-top: 55px;
+    font: 14px "microsoft yahei";
+}
+
+.footer h3, a, p, s {
+    color: #7F7F7F;
+    font: 14px "microsoft yahei";
+}
+
+.footer li {
+    float: left;
+}
+
+.footer li b {
+    display: block;
+    width: 49px;
+    height: 48px;
+    float: left;
+    margin-left: 16px;
+}
+
+.footer .product b {
+    margin-left: 25px;
+}
+
+.footer h3 {
+    margin-left: 18px;
+    margin-top: 84px;
+    margin-bottom: 50px;
+}
+
+.footer .download .icon1 b {
+    background: url("../images/footer.png") 0 0 no-repeat;
+}
+
+.footer .download .icon2 b {
+    background: url("../images/footer.png") -90px 0 no-repeat;
+}
+
+.footer .download .icon3 b {
+    background: url("../images/footer.png") -184px 0 no-repeat;
+}
+
+.footer .download .icon4 b {
+    background: url("../images/footer.png") -272px 0 no-repeat;
+}
+
+.footer .product .icon5 b {
+    background: url("../images/footer.png") -365px 0 no-repeat;
+}
+
+.footer .product .icon6 b {
+    background: url("../images/footer.png") -455px 0 no-repeat;
+}
+
+.footer .product .icon7 b {
+    background: url("../images/footer.png") -558px 0 no-repeat;
+}
+
+.qqyc {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.footer a:hover {
+    color: #31C27C;
+}
+
+.qqyc span {
+    margin: 0 10px;
+}
+
+.footer .about, .copyright, .company {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer .about li {
+    padding: 0 4px;
+}
+
+.about a {
+    font-size: 12px;
+}
+
+.copyright p {
+    font-size: 12px;
+}
+
+.company s {
+    font-size: 12px;
+}
+
+.company p a {
+    font-size: 12px;
+}
+
+.links li {
+    width: 100px;
+    height: 12px;
+    margin: 0 8px 20px 8px;
+}
+
+.links h3 {
+    margin-left: 10px;
+}
+
+/*尾部部分end*/
+/*登录点击部分stare*/
+#mask {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    filter: alpha(opacity=40);
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 6;
+}
+
+#show {
+    width: 562px;
+    height: 378px;
+    background: url("../images/index_r2_c2.png");
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -150px 0 0 -280px;
+    display: none;
+    z-index: 8;
+}
+
+.enter span {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -100px;
+    margin: -142px 0 0 242px;
+    cursor: pointer;
+    display: none;
+    z-index: 8;
+}
+/*登录点击部分end*/
+/*返回网页顶部部分stare*/
+.back{
+    width: 50px;
+    height: 152px;
+    position:fixed;
+    bottom: 60px;
+    right: 40px;
+    z-index: 4;
+}
+.back1,.back2,.back3{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+.back1{
+    background: url("../images/up.jpg");
+    display: none;
+}
+.back2{
+    background: url("../images/w.jpg");
+    background-color:#31C27C;
+}
+.back3{
+    background: url("../images/p.jpg");
+}
+.back2W{
+    width: 32px;
+    height: 32px;
+    line-height: 50px;
+    background-color: #31C27C;
+    text-align: center;
+    font: 12px "microsoft yahei";
+    color: #ffffff;
+    padding: 9px;
+    display: none;
+}
+.back2:hover .back2W{
+    display: block;
+}
+.back3S{
+    width: 50px;
+    height: 50px;
+    background-color: #31C27C;
+    text-align: center;
+    font: 12px "microsoft yahei";
+    line-height: 50px;
+    color: #ffffff;
+    display: none;
+}
+.back3:hover .back3S{
+    display: block;
+}
+/*返回网页顶部部分end*/
